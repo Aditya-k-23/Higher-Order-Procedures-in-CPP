@@ -50,12 +50,48 @@ Let us look at some examples that use lambda functions in C++.
 
 ### Lambda Example 1
 
-```
+```C++
+// Program to add two numbers using a lambda function
+#include <iostream>
+
+int main()
+{
+    int x = 10;
+    int y = 12;
+
+    auto add = [](int a, int b) -> int {
+        return a + b;
+    };
+    
+    std::cout << "The sum of " << x << " and " << y << " is " << add(x, y) << std::endl;
+    return 0;
+}
 ```
 
 
 
 ### Lambda Example 2
+
+```C++
+#include <iostream>
+#include <vector>
+
+// Program to print a vector using a lambda function
+int main()
+{
+    std::vector<int> my_vector = {1, 2, 3, 4, 5};
+
+    auto print = [](const std::vector<int>& vec)
+    {
+        for(const auto& number : vec){
+            std::cout << number << std::endl;
+        }
+    };
+
+    print(my_vector);
+    return 0;
+}
+```
 
 
 
