@@ -328,8 +328,12 @@ In conclusion, higher-order procedures are a powerful feature in functional prog
 
 ## References
 
-- GeeksforGeeks. (2023, January 3). *Std::transform() in C++ STL (perform an operation on all elements)*. GeeksforGeeks. Retrieved April 2, 2023, from https://www.geeksforgeeks.org/transform-c-stl-perform-operation-elements/ 
-- *C++ algorithm library - copy_if() function*. Tutorials Point. (n.d.). Retrieved April 2, 2023, from https://www.tutorialspoint.com/cpp_standard_library/cpp_algorithm_copy_if.htm 
+- "Higher-order function." Wikipedia, Wikimedia Foundation, 27 Mar. 2023, en.wikipedia.org/wiki/Higher-order_function.
+- Stroustrup, Bjarne. "The C++ Programming Language." Pearson Education, 2013.
+- "Lambda Expressions in C++." Microsoft Docs, Microsoft Corporation, docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-160.
+- "std::transform." cppreference.com, cppreference, en.cppreference.com/w/cpp/algorithm/transform.
+- "std::copy_if." cppreference.com, cppreference, en.cppreference.com/w/cpp/algorithm/copy_if.
+- "std::accumulate." cppreference.com, cppreference, en.cppreference.com/w/cpp/algorithm/accumulate.
 
 
 
