@@ -1,7 +1,7 @@
 # Higher Order Procedures in C++
 
 - [Introduction](#introduction)
-- [Lambda Functions](#Lambda-Functions)
+- [Lambda Functions](#lambda-functions)
   - [Lambda in C++](#lambda-in-C++)
   - [Lambda Example 1](#lambda-example-1)
   - [Lambda Example 2](#lambda-example-2)
