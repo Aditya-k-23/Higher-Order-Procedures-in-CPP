@@ -145,7 +145,7 @@ int main()
   
     for (int i = 0; i < 5; i++)
     {
-    		std::cout << results[i] << "\n  ";
+    	std::cout << results[i] << " ";
     }
   
     return 0;
@@ -160,17 +160,17 @@ int main()
 #include <vector>
 #include <algorithm>
 
-// Program to concatenate a string to each string in a vector using transform
+// Program to capitalize each charater in a vector of strings
 int main() {
-    std::vector<std::string> words = {"CSCA08", "CSCA48", "CSCC24", "CSCC11"};
+    std::vector<std::string> words = {"please", "maintain", "silence!"};
   
     std::transform(words.begin(), words.end(), words.begin(),
                    [](std::string& str) {
-                   		std::transform(str.begin(), str.end(), str.begin(), strcat(str, "is great!\n"));
+                   		std::transform(str.begin(), str.end(), str.begin(), toupper);
                       return str;
                     });
 
-    std::cout << "New Perspective: ";
+    std::cout << "Someone yelled: ";
     for (const auto& word : words) {
         std::cout << word << " ";
     }
@@ -298,7 +298,7 @@ Returns a value after applying op to all items in the range (first, last) and id
 int main() {
     std::vector<int> numbers{1, 2, 3, 4, 5};
     int product = std::accumulate(numbers.begin(), numbers.end(), 1, std::multiplies<int>());
-    std::cout << "The product of the numbers is: " << sum << std::endl;
+    std::cout << "The product of the numbers is: " << product << std::endl;
     return 0;
 }
 
@@ -314,7 +314,7 @@ int main() {
 
 // Program to create a sentence from strings in C++
 int main() {
-    std::vector<std::string> words{"CSCC24", "is", "awesome", "!!\n"};
+    std::vector<std::string> words{"CSCC24", " is ", "awesome", "!!\n"};
     std::string sentence = std::accumulate(words.begin(), words.end(), std::string(""));
     std::cout << "The sentence is: " << sentence << std::endl;
     return 0;
