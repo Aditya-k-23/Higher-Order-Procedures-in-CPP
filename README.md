@@ -2,9 +2,9 @@
 
 - [Introduction](#introduction)
 - [Lambda Functions](#Lambda-Functions)
-  - [Lambda in C++](#Lambda-in-C++)
-  - [Lambda Example 1](#Lambda Example 1)
-  - [Lambda Example 2](#Lambda Example 2)
+  - [Lambda in C++](#lambda-in-C++)
+  - [Lambda Example 1](#lambda-example-1)
+  - [Lambda Example 2](#lambda-example-2)
 - [Map](#Map)
   - [`std::transform` in C++](#std::transform in C++)
   - [Transform Example 1](#Transform Example 1)
