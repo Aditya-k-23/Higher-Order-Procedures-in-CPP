@@ -26,7 +26,7 @@
 
 ### What are Higher Order Procedures, why bother?
 
-Higher Order Procedures (HOPs) are procedures that take other functions as arguments or return a function as a result. HOPs enable a programmer to reuse and abstract code to improve code readability and modularity. HOPs are at the core of the functional programming paradigm which is based on using functions to build and maintain code. HOPs also create an opportunity for the programmer to abstract away from the fine-grained implementation of a function and focus on a high-level approach to solving a problem. Some examples of common HOPs are - Lambda functions, Map, Filter, and Fold. 
+Higher Order Procedures (HOPs) are procedures that take other functions as arguments or return a function as a result. HOPs enable a programmer to reuse and abstract code to improve code readability and modularity. HOPs are at the core of the functional programming paradigm, which uses functions to build and maintain code. HOPs also create an opportunity for the programmer to abstract away from the fine-grained implementation of a function and focus on a high-level approach to solving a problem. Some examples of common HOPs are - Lambda functions, Map, Filter, and Fold. 
 
 ### What is so special about C++?
 
@@ -54,8 +54,6 @@ Let us look at some examples that use lambda functions in C++.
 
 ```C++
 // Program to add two numbers using a lambda function
-#include <iostream>
-
 int main()
 {
     int x = 10;
@@ -70,12 +68,11 @@ int main()
 }
 ```
 
+The above program adds two integers 10 and 12 using a lambda function. The lambda function is returned into the add variable. `auto` is used for automatically detecting and assigning the type of a variable in C++.
+
 ### Lambda Example 2
 
 ```C++
-#include <iostream>
-#include <vector>
-
 // Program to print a vector using a lambda function
 int main()
 {
@@ -92,6 +89,8 @@ int main()
     return 0;
 }
 ```
+
+The above program is used to print a vector in C++. It uses a lambda function returned to the `print` variable of `auto` type.
 
 ## Map
 
@@ -132,10 +131,6 @@ Returns an iterator pointing to the end of the transformed range.
 ### Transform Example 1
 
 ```C++
-#include <iostream>
-#include <functional>
-#include <algorithm>
- 
 // Program to add elements of two arrays using transform
 int main()
 {
@@ -154,15 +149,12 @@ int main()
 }
 ```
 
+The above program adds elements of two arrays using the transform function in C++. The program uses 3 arrays - `first`, `second`, and `results`. It essentially performs `first + second` and stores the result in `results`.
 
 ### Transform Example 2
 
 ```C++
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
-// Program to capitalize each charater in a vector of strings
+// Program to capitalize each character in a vector of strings
 int main() {
     std::vector<std::string> words = {"please", "maintain", "silence!"};
   
@@ -182,7 +174,7 @@ int main() {
 }
 ```
 
-
+The above program uses transform to capitalize each character in a vector of strings. The program uses a lambda function which is applied on each word using transform, and itself applies another transform on each character of every word.
 
 ## Filter
 
@@ -212,10 +204,6 @@ Returns an iterator pointing to the element that follows the last element writte
 ### Copy If Example 1
 
 ```C++
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
 // Program to filter out even numbers using copy_if
 
 int main() {
@@ -235,14 +223,11 @@ int main() {
 }
 ```
 
+The above program uses `copy_if` to filter out even numbers from a vector of integers. It does it by passing the beginning and the ending position of the vector along with a lambda function to filter numbers based on their divisibility by two.
+
 ### Copy If Example 2
 
 ```C++
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
-
 // Program to filter courses taught by Anya
 int main() {
     std::vector<std::string> words = {"CSCA08", "CSCC24", "CSCC11", "CSCD84"};
@@ -263,7 +248,7 @@ int main() {
 
 ```
 
-
+The above program uses `copy_if` to filter out words according to the given parameters in the lambda function. In this case, these words correspond to the courses at UTSC and the filtered words are courses taught by Anya in the past.
 
 ## Fold
 
@@ -292,10 +277,6 @@ Returns a value after applying op to all items in the range (first, last) and id
 ### Accumulate Example 1
 
 ```C++
-#include <iostream>
-#include <numeric>
-#include <vector>
-
 // Program to calculate the product of numbers using accumulate
 int main() {
     std::vector<int> numbers{1, 2, 3, 4, 5};
@@ -306,14 +287,11 @@ int main() {
 
 ```
 
+The above program uses `accumulate` to calculate the product of numbers from a vector of integers and store it in the variable product. It leverages the `std::multiplies` function to do the same.
+
 ### Accumulate Example 2
 
 ```C++
-#include <iostream>
-#include <numeric>
-#include <string>
-#include <vector>
-
 // Program to create a sentence from strings in C++
 int main() {
     std::vector<std::string> words{"CSCC24", " is ", "awesome", "!!\n"};
@@ -324,9 +302,11 @@ int main() {
 
 ```
 
+The above program uses `accumulate` to concatenate the words given by a vector of strings. It does so by using its default addition function and using the empty string as the identity.
+
 ## Conclusion
 
-In conclusion, higher-order procedures are a powerful feature in functional programming languages that allow functions to take other functions as arguments or return them as results. Although C++ does not have built-in support for higher-order procedures, it provides features like function pointers, lambda expressions, and templates that can be used to implement similar functionality. We explored some examples of higher-order procedures in C++, including lambda expressions, `std::transform`, `std::copy_if`, and `std::accumulate`, which allow us to write generic algorithms that can be used with different data types and structures, making our code more modular and flexible. By using these techniques, we can write code that is more concise, efficient, and easier to maintain.
+In conclusion, higher-order procedures are a powerful feature in functional programming languages that allow functions to take other functions as arguments or return them as results. Although C++ does not have built-in support for higher-order procedures, it provides features like function pointers, lambda expressions, and templates that can be used to implement similar functionality. We explored some examples of higher-order procedures in C++, including lambda expressions, `std::transform`, `std::copy_if`, and `std::accumulate`, which allow us to write generic algorithms that can be used with different data types and structures, making our code more modular and flexible. Using these techniques, we can write more concise, efficient, and easier-to-maintain code.
 
 ## References
 
